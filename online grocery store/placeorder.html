@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="placeorder.css">    
+</head>
+<body>
+
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>p</span>
+            <span>l</span>
+            <span>a</span>
+            <span>c</span>
+            <span>e</span>
+            <span class="space"></span>
+            <span>o</span>
+            <span>r</span>
+            <span>d</span>
+            <span>e</span>
+            <span>r</span>
+        </h1>
+        <div class="row">
+
+            <div class="image">
+                <img src="Online Groceries-pana.png" alt="" class="src">
+            </div>
+            
+            <form  method="post">
+    
+                    <div class="full">
+                        <h3>Full Name</h3>
+                        <input type="text" name="gname" id="gname" placeholder="Your name.." required>
+                    </div>
+    
+                <div class="full">
+                    <h3>Email ID</h3>
+                    <input type="email"  pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required />
+                </div>
+    
+                 <div class="full">
+                    <h3>Address</h3>  
+                    <textarea placeholder='Enter your valid address here.....' maxlength='100' minlength='2' required></textarea>    
+                </div> 
+                <div class="full">
+                    <h3>Postcode / ZIP</h3>
+                    <input type="number" required />
+                </div>
+                <div class="full">
+                    <h3>Contact NO.</h3>
+                    <input type="tel" id="phone" name="phone" size="10" required />
+                </div>
+                <div class="submit">
+                    <!-- <input type="reset" value="reset" name="reset"> -->
+                    <input type="submit" value="order now" name="submit" onclick="window.location.href='payment.html'">
+                    </div>
+            </form>
+    <div class="alert alert-info" style="display: none;"></div>
+    </div>
+    </section>
+</body>
+</html>

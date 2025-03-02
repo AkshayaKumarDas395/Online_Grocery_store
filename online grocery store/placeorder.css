@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --primary: linear-gradient(90deg, orange 0%, rgba(239, 213, 71, 0.874) 100%);
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: orange;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 30rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 4.5rem;
+    background: rgba(255, 165, 0,.2);
+    color: orange;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    font-family: cursive;
+}
+
+.heading span.space{
+    background: none;
+}
+
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5;
+    align-items: center;
+}
+
+.book .row .image{
+    flex: 1 1 40rem;
+}
+
+.book .row .image img{
+    width: 85%;
+}
+
+ .book .row form{
+    flex: 2 2 40rem;
+    padding: 6.5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+}
+
+.book .row form .full{
+    padding: .01rem 0;
+    
+}
+.book .row form .full textarea{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem double hwb(250 8% 53% / 0.587);
+    height: 8rem;
+    resize: none;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.book .row form .full input{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem double hwb(250 8% 53% / 0.587);
+    font: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+
+.full input[type=text], .full select {
+    width: 100%;
+    padding: 7px;
+    margin: 8px 0;
+    display: inline-block !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #58595e;   
+}
+
+
+.book .row form .full h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+.book .row form .submit input{
+    display: inline-block;
+    margin-top: 4rem;
+    margin-left: 7.3%;
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 8.5rem;
+    border: .2rem solid orange;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 15px 15px 15px 15px;
+} 
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .book .row form .full {
+        width: 100%;
+    }    
+}
+@media (max-width:991px){
+    section{
+        padding:2rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+
+}
